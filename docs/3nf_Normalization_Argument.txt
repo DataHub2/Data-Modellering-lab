@@ -1,0 +1,18 @@
+3NF - My breakdown of the Data Model.
+
+1NF:
+The model ensures atomic values by using bridge tables (program_course) for exemple.
+And it also ensures that every row remains unique.
+
+2NF: 
+The tables with composite keys, like (course_teacher), strictly contains the important foreign keys.
+Without any unrelated non - key attributes, this is so i can prevent partial dependencies.
+
+3NF:
+All attributes depand only on the primary key. 
+
+. Student: Students are only linked to class_id. I avoided to link to program_id
+so that i can eliminate redundancy, beacuse the program is already via the class.
+
+. Inheritance: The role specific attributes like the hourley_rate is isolated in the (Consultant) table,
+instead of the parent (Person) table, this is so that the data depends on the specific entity.
