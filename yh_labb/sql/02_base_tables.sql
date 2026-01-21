@@ -1,4 +1,4 @@
--- These are the base tables
+-- These are the base tables.
 
 CREATE TABLE program (
     program_id SERIAL PRIMARY KEY,
