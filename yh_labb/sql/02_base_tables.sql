@@ -6,7 +6,7 @@ CREATE TABLE program (
     description TEXT
 );
 
-CREATE TABLE school (
+CREATE TABLE location (
     location_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     address VARCHAR(100) NOT NULL
