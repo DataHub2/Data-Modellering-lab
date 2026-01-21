@@ -8,9 +8,9 @@ CREATE TABLE student (
 );
 
 -- Employee inherits from Person
-CREATE TABLE Employee (
+CREATE TABLE employee (
     person_id INT PRIMARY KEY REFERENCES person(person_id) ON DELETE CASCADE,
-    title VARCHAR(50) NOT NULL, -- This title can be 'Educational leader, Teacher' etc.
+    hire_date DATE,
     department VARCHAR(50)
 );
 
