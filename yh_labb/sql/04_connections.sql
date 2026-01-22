@@ -11,3 +11,10 @@ CREATE TABLE class (
     location_id INT REFERENCES location(location_id),
     education_leader_id INT REFERENCES person(person_id) 
 );
+
+--Juction Table: program to course
+CREATE TABLE program_course (
+    program_id INT REFERENCES program(program_id) ON DELETE CASCADE,
+    course_id INT REFERENCES course(course_id) ON DELETE CASCADE, 
+    PRIMARY KEY (program_id, course_id)
+);
