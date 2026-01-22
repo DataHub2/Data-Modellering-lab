@@ -18,3 +18,11 @@ CREATE TABLE program_course (
     course_id INT REFERENCES course(course_id) ON DELETE CASCADE, 
     PRIMARY KEY (program_id, course_id)
 );
+
+-- Juction Table: course to teacher
+CREATE TABLE course_teacher (
+    course_id INT REFERENCES course(course_id) ON DELETE CASCADE,
+    teacher_id INT REFERENCES person(person_id) ON DELETE CASCADE,
+    PRIMARY KEY (course_id, teacher_id)
+);
+
