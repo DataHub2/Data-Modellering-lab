@@ -1,5 +1,6 @@
 -- Roles and the inheritance
 
+
 -- Student inherit from Person
 CREATE TABLE student (
     person_id INT PRIMARY KEY REFERENCES person(person_id) ON DELETE CASCADE,
