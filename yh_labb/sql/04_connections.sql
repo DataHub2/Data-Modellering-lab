@@ -26,3 +26,8 @@ CREATE TABLE course_teacher (
     PRIMARY KEY (course_id, teacher_id)
 );
 
+-- This is so you may link Stduent to class.
+ALTER TABLE student
+ADD CONSTRAINT fk_student_class
+FOREIGN KEY (class_id) REFERENCES class(class_id);
+
