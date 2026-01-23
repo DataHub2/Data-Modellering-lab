@@ -77,3 +77,8 @@ INSERT INTO program_course (program_id, course_id) VALUES  --- NOTE!: I got this
 -- In this case Conor Benn teaches the Java Course
 INSERT INTO course_teacher (course_id, teacher_id) VALUES
 (1, 2);
+
+-- Jon Jones (Consultant) teaches Big Data
+-- Note: Consultants are people, so we link via person_id
+INSERT INTO course_teacher (course_id, teacher_id) VALUES 
+(2, 3);
