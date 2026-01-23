@@ -41,3 +41,13 @@ INSERT INTO student (person_id, enrollment_date) VALUES
 (4, '2024-08-20'), -- Antonio
 (5, '2024-08-20'), -- Francis
 (6, '2024-08-20'); -- Lisa
+
+
+-- 4. Sensitive Data 
+INSERT INTO person_sensitive_data (person_id, person_nummer) VALUES 
+(1, '19541228-0001'), 
+(2, '19960928-0002'), 
+(3, '19870719-0003'), 
+(4, '19930303-0004'), 
+(5, '19591105-0005'), 
+(6, '19900101-0006');
