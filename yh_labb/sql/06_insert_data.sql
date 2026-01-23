@@ -61,3 +61,12 @@ INSERT INTO class (name, start_date, end_date, program_id, location_id, educatio
 
 -- Links Students to the Class. Note thatthey all studie system development
 UPDATE student SET class_id = 1 WHERE person_id IN (4, 5, 6);
+
+
+
+-- Link Program to Courses (Creating the curriculum)
+INSERT INTO program_course (program_id, course_id) VALUES  --- NOTE!: I got this part from LLM assistance.---
+(1, 1), -- Systemutveckling -> Java & Spring Boot
+(1, 3), -- Systemutveckling -> SQL
+(2, 2), -- Data Engineer -> Big Data
+(2, 3); -- Data Engineer -> SQL (Shared course!)
