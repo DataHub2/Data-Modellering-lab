@@ -70,3 +70,10 @@ INSERT INTO program_course (program_id, course_id) VALUES  --- NOTE!: I got this
 (1, 3), -- Systemutveckling -> SQL
 (2, 2), -- Data Engineer -> Big Data
 (2, 3); -- Data Engineer -> SQL (Shared course!)
+
+
+
+-- Linking Teacher to course
+-- In this case Conor Benn teaches the Java Course
+INSERT INTO course_teacher (course_id, teacher_id) VALUES
+(1, 2);
