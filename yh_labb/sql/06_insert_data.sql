@@ -59,3 +59,5 @@ INSERT INTO person_sensitive_data (person_id, person_nummer) VALUES
 INSERT INTO class (name, start_date, end_date, program_id, location_id, education_leader_id) VALUES 
 ('SYS24', '2024-08-20', '2026-06-05', 1, 1, 1);
 
+-- Links Students to the Class. Note thatthey all studie system development
+UPDATE student SET class_id = 1 WHERE person_id IN (4, 5, 6);
