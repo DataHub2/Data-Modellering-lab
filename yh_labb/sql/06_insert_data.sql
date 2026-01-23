@@ -51,3 +51,11 @@ INSERT INTO person_sensitive_data (person_id, person_nummer) VALUES
 (4, '19930303-0004'), 
 (5, '19591105-0005'), 
 (6, '19900101-0006');
+
+-- 5. Connections
+
+-- Create a Class: SYS24
+-- Program ID 1, Location ID 1 (Stockholm), Leader ID 1 (Denzel)
+INSERT INTO class (name, start_date, end_date, program_id, location_id, education_leader_id) VALUES 
+('SYS24', '2024-08-20', '2026-06-05', 1, 1, 1);
+
