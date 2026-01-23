@@ -20,7 +20,7 @@ FROM course co
 JOIN course_teacher ct ON co.course_id = ct.course_id
 JOIN person p ON ct.teacher_id = p.person_id;
 
--- 3. Getting all the classes to see who is the Education Leader for each class.
+-- 3 . Getting all the classes to see who is the Education Leader for each class.
 SELECT
     c.name AS class_name,
     p.first_name || ' ' || p.last_name AS education_leader,
