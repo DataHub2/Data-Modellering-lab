@@ -35,3 +35,9 @@ INSERT INTO employee (person_id, hire_date, department) VALUES
 -- Consultant 
 INSERT INTO consultant (person_id, company, hourly_rate, f_skatt) VALUES 
 (3, 'Bones Data AB', 1500.00, TRUE); -- Jon Jones Consultant
+
+-- Students 
+INSERT INTO student (person_id, enrollment_date) VALUES 
+(4, '2024-08-20'), -- Antonio
+(5, '2024-08-20'), -- Francis
+(6, '2024-08-20'); -- Lisa
