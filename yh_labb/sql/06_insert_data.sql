@@ -30,3 +30,8 @@ INSERT INTO person (first_name, last_name, email, phone) VALUES
 INSERT INTO employee (person_id, hire_date, department) VALUES 
 (1, '2015-01-01', 'Management'), -- Denzel (Education Leader)
 (2, '2022-05-15', 'Education');  -- Conor Benn (Teacher in Java )
+
+
+-- Consultant 
+INSERT INTO consultant (person_id, company, hourly_rate, f_skatt) VALUES 
+(3, 'Bones Data AB', 1500.00, TRUE); -- Jon Jones Consultant
