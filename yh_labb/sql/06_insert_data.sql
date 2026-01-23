@@ -15,5 +15,12 @@ INSERT INTO course (course_code, name, points, description) VALUES
 ('DB-SQL', 'Datalagring & SQL', 25, 'Databasdesign och avancerade querys'); 
 
 
-
+-- 2, Person Data
+INSERT INTO person (first_name, last_name, email, phone) VALUES 
+('Denzel', 'Washington', 'denzel.boss@yrkesco.se', '070-111222'),       
+('Conor', 'Benn', 'conor.java@yrkesco.se', '070-333444'),              
+('Jon', 'Jones', 'bones@data-consulting.com', '070-999888'),           
+('Antonio', 'Rudiger', 'toni.code@student.yrkesco.se', '070-555666'),  
+('Francis', 'Underwood', 'frank.u@student.yrkesco.se', '070-666666'),  
+('Lisa', 'Yllander', 'lisa.y@student.yrkesco.se', '070-777777');
 
