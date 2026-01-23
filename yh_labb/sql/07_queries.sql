@@ -26,7 +26,7 @@ SELECT
     p.first_name || ' ' || p.last_name AS education_leader,
     l.name AS location
 FROM class c 
-JOIN person p OON c.education_leader_id = p.person_id
+JOIN person p ON c.education_leader_id = p.person_id
 JOIN location l ON c.location_id = l.location_id;
 
 
